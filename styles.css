@@ -1,6 +1,5 @@
-@import url('https://fonts.google.com/specimen/Montserrat&font-weight=700, 500');
-@import url('https://fonts.google.com/specimen/Fraunces&font-weight=700');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,14 +9,13 @@
 
 body {
     background: hsl(30, 38%, 92%);
-    font-family: 'Montserrat', 'Fraunces', sans-serif;
     font-size: 14px;
     height: 100%;
     width: 100%;
 }
 
 #main {
-    width: 50%;
+    width: 40.4rem;
     height: 30%;
     background: hsl(0, 0%, 100%);
     margin: 100px auto;
@@ -27,8 +25,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
-#section1 {
-    width: 100%;
+#image {
+    width: 20rem;
     background: url("./images/image-product-desktop.jpg");
     background-size: cover;
     background-position: center;
@@ -37,16 +35,15 @@ body {
 }
 
 #section2 {
+
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    gap: 1.2rem;
-    padding: 2rem;
-
+    padding: 1.5rem;
+    gap: 1rem;
 }
 
 h1 {
-    font-family: 'Monserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: light;
     font-size: 15px;
     color: hsl(228, 12%, 48%);
@@ -56,36 +53,36 @@ h2{
     font-size: 2.4rem;
     font-weight: 700;
     letter-spacing: 1px;
-    font-family: 'Fraunces';
+    font-family: 'Fraunces', serif;
     line-height: 2rem;
 }
 .main-text {
-    font-size: 14px;
-    line-height: 25px;
-    word-spacing: 2px;
+    font-size: 1rem;
+    line-height: 2rem;
+    word-spacing: 0.1rem;
     color: hsl(228, 12%, 48%);
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 .price {
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
-    gap: 50px;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    gap: 2rem;
+    margin-top: 0.9rem;
+    margin-bottom: 1.2rem;
 }
 .price p{
     color: hsl(158, 36%, 37%);
-    font-size: 30px;
-    font-weight: 700;
-    font-family: 'Fraunces', sans-serif;
+    font-size: 2.2rem;
+    font-family: 'Fraunces', serif;
     
 }
 .price span{
     font-style: italic;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
 }
 
 button {
@@ -117,12 +114,7 @@ button:hover {
 
 /* mobile design */
 
-@media screen and (max-width: 475px) {
-    #main {
-        display: grid;
-        grid-template-rows: repeat(2, 200px);
-    }
-    #section1 {
-        background: url(./images/icon-cart.svg);
-    }
+@media screen and (max-width: 650px) {
+
+    
 }
